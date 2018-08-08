@@ -1,0 +1,143 @@
+\documentclass[ignorenonframetext]{beamer}
+\usepackage{beamerthemeshadow}
+
+%\documentclass{article}
+%\usepackage{beamerarticle}
+%\usepackage{graphicx}
+
+\usepackage{lastpage}
+\usepackage{xcolor}
+\usepackage{pgf}
+\usepackage{colortbl}
+\usepackage{verbatim}
+\usepackage{hyperref}
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+\newcommand{\prbf}[1]{\textbf{#1}}
+\newcommand{\prit}[1]{\textit{#1}}
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\bdm}{\begin{displaymath}}
+\newcommand{\edm}{\end{displaymath}}
+
+\newcommand{\ft}[1]{
+  \frametitle{\begin{tabular}{p{4.2in}r} \textcolor{white}{#1} & \small{\insertframenumber / \inserttotalframenumber} \end{tabular}}
+  %\frametitle{#1}
+  \setbeamercovered{transparent=18}
+}
+
+\newcommand{\stepinv}{\setbeamercovered{invisible}}
+\newcommand{\stopinv}{\setbeamercovered{transparent=18}}
+\newcommand{\uncoverinv}[1]
+{
+  \setbeamercovered{invisible}
+  \uncover<+->{#1}
+  \setbeamercovered{transparent=18}
+}
+\newcommand{\ans}[1]{\textcolor{blue}{#1}}
+\newcommand{\ansinv}[1]
+{
+  \setbeamercovered{invisible}
+  \uncover<+->{\textcolor{blue}{#1}}
+  \setbeamercovered{transparent=18}
+}
+\newcommand{\setinv}{\setbeamercovered{invisible}}
+\newcommand{\setvis}{\setbeamercovered{transparent=18}}
+\newcommand{\centerpic}[2]
+{
+  \begin{center}
+  \includegraphics[#1]{#2}
+  \end{center}
+}
+\newcommand{\h}[1]{\hat{#1}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\hl}[1]{\alt<#1>{\rowcolor{lightgreen}\hspace{-2.1pt}}{\hspace{-2.1pt}}}
+
+\definecolor{mycolor}{rgb}{0.11,0.53,0.61}
+\usecolortheme[named=mycolor]{structure}
+
+\title{Smart Strength Training}
+\author{ESS 230: Advanced Strength Training}
+\date{}
+
+\begin{document}
+
+\frame{\titlepage\setcounter{framenumber}{0}}
+
+\frame
+{
+  \ft{Smart Strength Training Practices}
+  \bi
+  \item<+-> Regular training: sessions every week, multiple times per week.
+  \item<+-> Alternate weights: Exercise a number of different muscles in a session, don't spend too much time with one exercise.
+  \item<+-> Alternate types of exercise during week: on off days, work on cardio exercises.
+  \item<+-> Do not let weight lifting sessions go too long.
+  \item<+-> Don't just look at the weights, that won't do anything.
+  \item<+-> Don't cram, that will hurt you.
+  \ei 
+}
+
+
+\frame
+{
+  \ft{Smart Study Practices}
+  \bi
+  \item<+-> Regular sessions: study every week.
+    \bi
+    \item<+-> This is more productive (takes less total studying time).
+    \item<.-> Leads to long-term memory (you'll remember for the final, next class).
+    \ei
+  \item<+-> Alternate topics and types of exercises
+    \bi
+    \item<+-> Don't spend a whole session on one topic.
+    \item<.-> Don't spend whole session on one method, change it up (review notes, practice problems, test yourself, etc).
+    \ei
+  \item<+-> Alternate courses during week.
+  \item<+-> Don't let study sessions go on too long.
+  \item<+-> Don't just look at your materials (i.e. only review notes is next to worthless).
+  \item<+-> Don't cram, it will hurt you in the long run.
+  \ei
+}
+
+\frame{
+  \ft{Other Smart Practices}
+  \bi
+  \item<+-> If reviewing notes or textbook, only do it briefly.
+    \bi
+    \item<+-> \textit{Recognition Fallacy}
+    \ei
+  \item<+-> Test yourself: take practice tests, make or find your own practice questions.
+  \item<+-> Take notes from your book, or take notes from your notes.
+  \item<+-> Don't study isolated facts. 
+    \bi
+    \item<+-> Don't focus on terms, highlighted material, etc.
+    \item<+-> This leads to little comprehension.
+    \ei
+  \item<+-> When to best review notes: \textit{Right after class!!  Do it within hours, same day!!}
+  \item<+-> Change location.
+  \item<+-> Do not ``multitask.''  Human brain is not efficient at changing tasks.
+    \bi
+    \item<+-> No TV, radio, computer, text messaging, facebook, etc.
+    \ei
+  \item<+-> Postpone pleasurable activities.
+  \ei
+}
+
+\frame
+{
+  \ft{Watch These Videos!}
+  \begin{center}
+    Dr. Stephen Chew, a Cognitive Psychologist at Samford University explains to college students how the mind works (and doesn't work) to effectively learn.\\
+    \vspace*{0.2in}
+    \textcolor{blue}{\href{http://www.youtube.com/playlist?list=PL85708E6EA236E3DB}{http://www.youtube.com/playlist?list=PL85708E6EA236E3DB}}
+  \end{center}
+}
+
+
+
+\end{document}
